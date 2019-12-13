@@ -28,5 +28,10 @@ describe('ANAGRAM#checker') do
     expect(test.anagram("hello")).to(eq("These words are boring."))
   end
 
+  it("6) returns the anagram/antigram/status of each word entered as an argument compared to the primary word.") do
+    test = ANAGRAM.new("parse")
+    expect(test.anagram("pe'ars~munch~spaz s")).to(eq("From your primary word of parse: pears is an anagram, munch is an antigram, and spazs is boring."))
+  end
+
 
 end

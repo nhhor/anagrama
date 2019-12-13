@@ -1,8 +1,8 @@
 class ANAGRAM
     
-  # attr_reader(:)
+  attr_reader(:primary_word)
   # attr_writer(:)
-  attr_accessor(:primary_word)
+  # attr_accessor(:)
 
   def initialize(primary_word)
     @primary_word = primary_word
