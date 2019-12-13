@@ -8,8 +8,8 @@ class ANAGRAM
   # end
 
   def anagram(word1, word2)
-    sorted_letters1 = word1.split("").sort
-    sorted_letters2 = word2.split("").sort
+    sorted_letters1 = word1.downcase.split("").sort
+    sorted_letters2 = word2.downcase.split("").sort
     letters_compare = sorted_letters1 & sorted_letters2
 
     puts "LOG word1: '#{word1}' / LOG sorted_letters1: #{sorted_letters1}"
