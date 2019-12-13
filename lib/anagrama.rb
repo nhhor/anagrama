@@ -2,15 +2,14 @@ class ANAGRAM
     
   # attr_reader(:)
   # attr_writer(:)
-  attr_accessor(:cents)
+  # attr_accessor(:)
 
-  def initialize(cents)
-    @cents = cents
+  def initialize()
 
   end
 
-  def converter()
-  
+  def anagram(word1, word2)
+    "test"
   end
 
 
