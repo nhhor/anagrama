@@ -23,6 +23,8 @@ class ANAGRAM
     if (word1.match(/[aeiouy]/) && word2.match(/[aeiouy]/))
       if (sorted_letters1 == sorted_letters2)
         answer = "These words are anagrams."
+      elsif letters_compare.length == 0
+        answer = "These words have no letter matches and are antigrams."
       else
         answer = "cant be anagram..."
       end
