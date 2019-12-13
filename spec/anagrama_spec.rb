@@ -18,4 +18,9 @@ describe('ANAGRAM#checker') do
     expect(test.anagram("Ruby", "Yvrb")).to(eq("You need to input actual words!"))
   end
 
+  it("returns 'These words have no letter matches and are antigrams.' when either word entered does not contain at least one similar letter.") do
+    test = ANAGRAM.new()
+    expect(test.anagram("hi", "bye")).to(eq("These words have no letter matches and are antigrams."))
+  end
+
 end

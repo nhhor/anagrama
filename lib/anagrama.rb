@@ -12,7 +12,7 @@ class ANAGRAM
     sorted_letters2 = word2.downcase.split("").sort
     letters_compare = sorted_letters1 & sorted_letters2
 
-    puts `clear`
+    # puts `clear`
     puts ""
     puts "LOG word1: '#{word1}' / LOG sorted_letters1: #{sorted_letters1}"
     puts "LOG word2: '#{word2}' / LOG sorted_letters2: #{sorted_letters2}"
