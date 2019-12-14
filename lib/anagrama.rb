@@ -58,10 +58,9 @@ class ANAGRAM
       boring_word_array.each { |boring| answer += "#{boring.upcase} is boring, "}
     end
 
-
-
-    puts answer.gsub(/,\W$/, ".").gsub(/\b, \b/i, ", and ")
-    answer.gsub(/,\W$/, ".").gsub(/\b, \b/i, ", and ")
+    result = answer.gsub(/,\W$/, ".").gsub(/\b, \b/i, ", and ")
+    puts result
+    result
 
   end
 end
